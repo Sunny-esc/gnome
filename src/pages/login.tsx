@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom"
-import { Button } from "@/components/ui/button"
 import {
   Card,
   CardAction,
@@ -21,7 +20,7 @@ export default function LoginPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     // TODO: validate credentials
-    navigate("/genome") // go to main/home
+    navigate("/") // go to main/home
   }
 
   return (
@@ -60,9 +59,9 @@ export default function LoginPage() {
         </form>
       </CardContent>
       <CardFooter className="flex-col gap-2">
-        <Button onClick={handleSubmit} type="submit" className="w-full bg-blue-800">
+        <button onClick={handleSubmit} type="submit" className="border w-full bg-blue-600 hover:bg-blue-900 z-10">
           Login
-        </Button>
+        </button>
       
       </CardFooter>
     </Card>

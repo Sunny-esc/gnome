@@ -17,10 +17,13 @@ export default function LoginPageTap() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    navigate("/genome/login"); // go to login
+    navigate("/login"); // go to login
   };
   return (
-    <motion.div {...pageTransition} className="bg-black h-screen flex items-center justify-center">
+    <motion.div {...pageTransition} className="bg-black h-screen flex flex-col items-center justify-center">
+      <div>
+        <h1 className="text-4xl font-bold text-white mb-8 text-center">Welcome, Guest!</h1>
+      </div>
       <Card
         className="w-full max-w-sm bg-gradient-to-b from-gray-900 to-black border-2 border-blue-900 text-white"
         onClick={handleSubmit}

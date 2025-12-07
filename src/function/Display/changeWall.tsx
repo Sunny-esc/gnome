@@ -1,6 +1,6 @@
     import { useState, useEffect, useRef } from "react";
     import Draggable from "react-draggable";
-    import images from "../../../public/assets";
+    import images from "../../assets";
     import { CircleX, Maximize2 } from "lucide-react";
 
     type Browserprops = {

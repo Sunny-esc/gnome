@@ -26,13 +26,18 @@ type DrawProps = {
 export default function Draw({ open, onOpenChange }: DrawProps) {
   return (
     <Drawer open={open} onOpenChange={onOpenChange}>
-      <DrawerContent className="DrawerContent">
+      <DrawerContent className="DrawerContent bg-backdrop/50 backdrop-blur-md border-white/10">
         <DrawerHeader>
-          <DrawerTitle className="DrawerTitle">Menu</DrawerTitle>
-          <DrawerDescription>icons
+          <DrawerDescription>
 
-        <div className="  flex justify-center">
+        <div className="  grid grid-cols-7 mx-20 p-10 gap-4 mt-4">
         <img src={app} alt="" />
+         <img src={firfox} alt="" />
+         <img src={bash} alt="" />
+         <img src={softwarre} alt="" />
+         <img src={vs} alt="" />
+         <img src={cal} alt="" />
+           <img src={app} alt="" />
          <img src={firfox} alt="" />
          <img src={bash} alt="" />
          <img src={softwarre} alt="" />
@@ -46,7 +51,7 @@ export default function Draw({ open, onOpenChange }: DrawProps) {
 
         </DrawerHeader>
         <DrawerFooter>
-          <Button>Submit</Button>
+          
           <DrawerClose>
             <Button variant="outline">Cancel</Button>
           </DrawerClose>

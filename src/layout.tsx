@@ -10,9 +10,9 @@ export default function Layout() {
     <BrowserRouter>
       <Routes >
 
-        <Route path="/Genome" element={<Home />} />
-        <Route path="/Genome/login" element={<LoginPage />} />
-        <Route path="/Genome/user" element={<LoginPageTap />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/user" element={<LoginPageTap />} />
       </Routes>
     </BrowserRouter>
     </AnimatePresence>

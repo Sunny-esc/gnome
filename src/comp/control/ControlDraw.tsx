@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import { useBattery } from 'react-use';
 
-import batteryimg from "../../../public/assets/battery.svg";
+import batteryimg from "/src/assets/battery.svg";
 import * as Dialog from "@radix-ui/react-dialog";
 import { useState } from "react";
 import { Slider } from "@/components/ui/slider";
@@ -51,7 +51,7 @@ export default function Contorl() {
         </Dialog.Trigger>
         <Dialog.Portal>
           <Dialog.Overlay className="DialogOverlay" />
-          <Dialog.Content className="DialogContent border flex-col gap-4 w-[25%] h-[50%] fixed top-[30  %] left-[87%] p-2 rounded-2xl text-white ">
+          <Dialog.Content className="DialogContent border flex-col gap-4 w-[25%] h-[50%] fixed top-[30%] left-[87%] p-2 rounded-2xl text-white ">
          
          {/**/}
             <div className="flex justify-between">
